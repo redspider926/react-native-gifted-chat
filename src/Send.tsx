@@ -74,7 +74,7 @@ export default class Send<
 
   handleOnPress = () => {
     const { text, onSend } = this.props
-    if (text && onSend) {
+    if (onSend) {
       onSend({ text: text.trim() } as Partial<TMessage>, true)
     }
   }
